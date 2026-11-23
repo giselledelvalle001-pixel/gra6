@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to Expedia | Giselle Delvalle, 2026</title>
+<link rel="stylesheet" href="https://use.typekit.net/yqu3ich.css">
+<link rel="stylesheet" href="https://use.typekit.net/yqu3ich.css">
+
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/miraflores%20peru.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	font-family: "bell-centennial-std-address", sans-serif;
+}
+header {
+    background-color: #b9d7dd;
+}
+.logo {
+    width: auto;
+    height: 55px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+wrapper {
+    width: 1366px;
+    margin: 32px auto;
+    display: block;
+    border-radius: 16px;
+    background-color: hsla(207,34%,80%,0.65);
+    background-image: none;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 li {
+    background-image: none;
+    background-color: hsla(0,0%,100%,0.74);
+    margin: 8px;
+    text-align: center;
+    border: thin solid hsla(0,0%,62%,1.00);
+    border-radius: 8px;
+}
+#Tabs1 li:hover {
+    background-color: rgba(159,209,219,0.56);
+}
+#Tabs1 a {
+    font-family: caslonian-std-l, sans-serif;
+    color: #537D86;
+}
+input {
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: thin solid #7db7c3;
+    font-family: "bell-centennial-std-address", sans-serif;
+    color: rgba(0,0,0,1.00);
+}
+#numberof {
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: thin solid #7db7c3;
+}
+#numberof2 {
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: thin solid #7db7c3;
+}
+section {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+    display: inline-block;
+    width: 25%;
+}
+#submit {
+    background-color: #7db7c3;
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+}
+#date {
+    width: 10%;
+}
+#search {
+    background-color: #7db7c3;
+    -webkit-box-shadow: 7px 4px #356c78;
+    box-shadow: 7px 4px #356c78;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+#search2 {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #7db7c3;
+    -webkit-box-shadow: 7px 4px #356c78;
+    box-shadow: 7px 4px #356c78;
+    position: relative;
+    left: -5px;
+    text-align: center;
+}
+#date2 {
+    width: 15%;
+}
+#date3 {
+    width: 11%;
+}
+#date4 {
+    width: 15%;
+}
+#date5 {
+    width: 15%;
+}
+</style>
+<link href="jQueryAssets/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-3.7.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui.min.js"></script>
+</head>
+
+<body>
+<header><img src="images/expedia-logo-png-transparent.png" alt="" width="2400" height="680" class="logo"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="images/airplane.png" alt="" width="47" height="50"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="images/hotel.png" alt="" width="69" height="50"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="images/car.png" alt="" width="73" height="50"><br>
+      Rentals</a></li>
+      <li><a href="#tabs-4"><img src="images/star.png" alt="" width="53" height="50"><br>
+      Activities</a></li>
+      <li><a href="#tabs-5"><img src="images/cruise.png" alt="" width="75" height="50"><br>
+      Cruises</a></li>
+    </ul>
+    <div id="tabs-1">
+<input type="text" class="departingfrom" placeholder="Departing from">
+<input class="arrivingto" placeholder="Arriving to">
+<input type="date" name="date" id="date">
+<select id="numberof">
+  <option>Number of Travelers</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select><input name="Search" type="submit" id="search" title="Search" value="Search">
+</div>
+    <div id="tabs-2">
+      <input name="hotelname" type="text" class="departingfrom" id="hotelname" placeholder="Hotel Name">
+      <input name="date2" type="date" id="date2" title="Check-in date">
+      <input name="date2" type="date" id="date3" title="Check-out date">
+      <select name="numberof" id="numberof2">
+        <option>Number of Guests</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <input name="search" type="submit" id="search2" title="Search" value="Search">
+    </div>
+    <div id="tabs-3">
+      <input name="pickup" type="text" class="departingfrom" id="pickup" placeholder="Pick-up">
+      <input type="date" name="date3" id="date4">
+      <input name="dropoff" class="arrivingto" id="dropoff" placeholder="Drop off">
+<input type="date" name="date3" id="date5">
+<input type="time" name="time" id="time">
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
