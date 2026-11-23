@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to Expedia | Giselle Delvalle, 2026</title>
+<link rel="stylesheet" href="https://use.typekit.net/yqu3ich.css">
+<link rel="stylesheet" href="https://use.typekit.net/yqu3ich.css">
+
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/miraflores%20peru.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	font-family: "bell-centennial-std-name-num", sans-serif;
+}
+header {
+    background-color: #b9d7dd;
+}
+.logo {
+    width: auto;
+    height: 55px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+wrapper {
+    width: 1366px;
+    margin: 32px auto;
+    display: block;
+    border-radius: 16px;
+    background-color: hsla(207,34%,80%,0.65);
+    background-image: none;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 li {
+    background-image: none;
+    background-color: hsla(0,0%,100%,0.74);
+    margin: 8px;
+    text-align: center;
+    border: thin solid hsla(0,0%,62%,1.00);
+    border-radius: 8px;
+}
+#Tabs1 li:hover {
+    background-color: rgba(159,209,219,0.56);
+}
+#Tabs1 a {
+    font-family: caslonian-std-l, sans-serif;
+    color: #537D86;
+}
+input {
+    margin: 8px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: thin solid #6FADBD;
+    text-align: left;
+    font-family: "bell-centennial-std-name-num", sans-serif;
+    color: rgba(0,0,0,1.00);
+}
+section {
+    width: 100%;
+    margin-right: -4px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    -webkit-box-shadow: 0 0px;
+    box-shadow: 0 0px;
+    background-color: rgba(141,188,193,0.63);
+    border: thin solid rgba(125,168,172,0.84);
+    font-family: "bell-centennial-std-name-num", sans-serif;
+}
+#date {
+    width: 15%;
+    display: inline-block;
+    margin-right: -4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: thin solid #6FADBD;
+}
+#select {
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: -4px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    width: 15%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: inline-block;
+    border: thin solid #6FADBD;
+    position: relative;
+    left: 12px;
+}
+#submit {
+    width: 200px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: thin solid #6FADBD;
+    text-align: center;
+    position: relative;
+    left: 85px;
+    background-color: rgba(42,83,83,1.00);
+    color: rgba(255,255,255,1.00);
+}
+.departingfrom {
+}
+.arrivingto {
+}
+</style>
+<link href="jQueryAssets/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-3.7.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui.min.js"></script>
+</head>
+
+<body>
+<header><img src="images/expedia-logo-png-transparent.png" alt="" width="2400" height="680" class="logo"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="images/airplane.png" alt="" width="47" height="50"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="images/hotel.png" alt="" width="69" height="50"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="images/car.png" alt="" width="73" height="50"><br>
+      Rentals</a></li>
+      <li><a href="#tabs-4"><img src="images/star.png" alt="" width="53" height="50"><br>
+      Activities</a></li>
+      <li><a href="#tabs-5"><img src="images/cruise.png" alt="" width="75" height="50"><br>
+      Cruises</a></li>
+    </ul>
+    <div id="tabs-1">
+      <section>
+        <input type="text" class="departingfrom" placeholder="Departing from">
+        <input class="arrivingto" placeholder="Arriving to">
+<input type="date" name="date" id="date">
+<select name="select" id="select">
+  <option value="0">Number of Travelers</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+<input type="submit" name="submit" id="submit" value="Submit">
+      </section>
+</div>
+    <div id="tabs-2">
+      <section>
+        <input type="text" class="hotelname" placeholder="Hotel Name">
+<input type="date" name="date2" id="date2">
+        <select name="select2" id="select2">
+          <option value="0">Number of Travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="submit" name="submit2" id="submit2" value="Submit">
+      </section>
+    </div>
+    <div id="tabs-3">
+      <p>Content 3</p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
